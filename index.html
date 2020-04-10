@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <script src="js/scripts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
   
 </head>
 
@@ -32,12 +34,12 @@
         
         <table class="tg">
           <tr>
-            <th class="tg-qs0d leftcell">Inkomenspost</th>
+            <th class="tg-qs0d leftcell">Inkomsten</th>
             <th class="tg-qs0d rightcell">Bedrag</th>
           </tr>
           <tr>
-            <td class="tg-0lax leftcell"><i class="fa fa-trash-alt" id="delete-icon" onclick="deleteTableRow(this);"></i><input type="text" id="label" class="leftinput" /></td>
-            <td class="tg-0lax rightcell"><i class="fas fa-euro-sign" id="euro-icon"></i><input type="text" id="bedrag" class="rightinput"/></td>
+            <td class="tg-0lax leftcell"><i class="fa fa-trash-alt" id="delete-icon" onclick="deleteTableRow(this);calculate();"></i><input type="text" id="label" placeholder="Beschrijving" class="leftinput" /></td>
+            <td class="tg-0lax rightcell"><i class="fas fa-euro-sign" id="euro-icon"></i><input type="text" class="rightinput" /></td>
           </tr>
         </table>
         </div>
@@ -51,12 +53,12 @@
       <div class="expenses-table" id="expenses-table">
         <table class="tg">
           <tr>
-            <th class="tg-qs0d leftcell">Uitgave</th>
+            <th class="tg-qs0d leftcell">Uitgaven</th>
             <th class="tg-qs0d rightcell">Bedrag</th>
           </tr>
           <tr>
-            <td class="tg-0lax leftcell"><i class="fa fa-trash-alt" id="delete-icon" onclick="deleteTableRow(this);"></i><input type="text" id="label" class="leftinput" /></td>
-            <td class="tg-0lax rightcell"><i class="fas fa-euro-sign" id="euro-icon"></i><input type="text" id="bedrag" class="rightinput"/></td>
+            <td class="tg-0lax leftcell"><i class="fa fa-trash-alt" id="delete-icon" onclick="deleteTableRow(this);"></i><input type="text" id="label" placeholder="Beschrijving" class="leftinput" /></td>
+            <td class="tg-0lax rightcell"><i class="fas fa-euro-sign" id="euro-icon"></i><input type="text" class="rightinput" /></td>
           </tr>
         </table>
       </div>
@@ -66,11 +68,9 @@
       </div>
       
     </div>
-      <div class="saldo">
-          <span style="align-items:center">€12.345,00</span>
-      </div>
-     
-    
+    <div class="saldo">
+        Saldo:<span style="margin-left: 10px;" id="balance"></span>
+    </div>
 
     </main>
     <footer>
