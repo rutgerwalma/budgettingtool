@@ -42,7 +42,7 @@ function addTableRow(button){
   table.append(
     '<tr>' + 
         '<td class="tg-0lax leftcell"><i class="fa fa-trash-alt" id="delete-icon" onclick="deleteTableRow(this);calculate();"></i><input type="text" id="label" placeholder="Beschrijving" class="leftinput" /></td>' +
-        '<td class="tg-0lax rightcell"><i class="fas fa-euro-sign" id="euro-icon"></i><input type="text" class="rightinput" /></td>' +
+        '<td class="tg-0lax rightcell"><i class="fas fa-euro-sign" id="euro-icon"></i><input type="text" class="rightinput" onkeypress="checkKeyCode(event)" /></td>' +
     '</tr>'
   );
 
