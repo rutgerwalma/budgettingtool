@@ -7,7 +7,7 @@ body {
   text-align: center;
   font-family: "Lato", sans-serif;
   margin: 0;
-  background: #bfbfbf;
+  background-image: url(prism.png);
 }
 
 h1,
@@ -38,11 +38,12 @@ article {
 }
 
 header {
-  background: #ececec;
+  background: #1e1e1e;
   padding: 1rem;
-  border-bottom: 5px solid #ffe300;
+  border-bottom: 5px solid #185284;
   grid-row: 1;
   grid-column: 1 / 4;
+  color: #fff;
 }
 
 main {
@@ -64,10 +65,10 @@ main {
 }
 
 footer {
-  background: #ececec;
+  background: #1e1e1e;
   padding: 1rem;
-  color: #222;
-  border-top: 5px solid #ffe300;
+  color: #fff;
+  border-top: 5px solid #185284;
   grid-row: 3;
   grid-column: 1 / 4;
 }
@@ -104,9 +105,9 @@ input[type="text"] {
 }
 
 button {
-  background-color: #ffcb00;
+  background-color: #185284;
   border: none;
-  color: #222;
+  color: #fff;
   padding: 5px 5px;
   text-align: center;
   text-decoration: none;
@@ -119,7 +120,7 @@ button {
 }
 
 button:hover {
-  background-color: #e4b600;
+  background-color: #0f385b;
   border: 1px solid rgba(255, 255, 255, 0.55);
 }
 
